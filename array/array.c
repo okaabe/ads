@@ -38,6 +38,8 @@ int array_push(Array* array, int value) {
     dynamic_array_handling(array);
     array -> data[array -> used] = value;
     array -> used += 1;
+
+    return value;
 }
 
 int array_pop(Array* array) {
